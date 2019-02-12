@@ -2,7 +2,7 @@ package src
 
 import "math"
 
-const Delta = 0.0000001
+const delta = 0.0000001
 
 type (
 
@@ -105,7 +105,7 @@ func equals(a, b []float32) bool {
 		return false
 	}
 	for i := range a {
-		if math.Abs(float64(a[i]-b[i])) > Delta {
+		if math.Abs(float64(a[i]-b[i])) > delta {
 			return false
 		}
 	}
